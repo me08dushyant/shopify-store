@@ -1,0 +1,30 @@
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "color_background": "#ffffff",
+      "color_foreground": "#121212",
+      "color_primary": "#121212",
+      "color_primary_foreground": "#ffffff",
+      "color_secondary": "#f4f4f4",
+      "color_secondary_foreground": "#121212",
+      "color_accent": "#1a73e8",
+      "color_border": "#e5e5e5",
+      "color_muted": "#6b6b6b",
+      "color_error": "#d82c0d",
+      "color_success": "#108043",
+      "font_heading_family": "sans-serif",
+      "font_heading_scale": 100,
+      "font_body_family": "sans-serif",
+      "font_body_scale": 100,
+      "page_width": 1200,
+      "container_padding": 16,
+      "border_radius": 8,
+      "social_facebook_link": "",
+      "social_instagram_link": "",
+      "social_twitter_link": "",
+      "social_tiktok_link": "",
+      "social_youtube_link": ""
+    }
+  }
+}

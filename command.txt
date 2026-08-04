@@ -1,0 +1,1 @@
+ shopify theme dev --theme 165691457776 --theme-editor-sync --live-reload=full-page --open  

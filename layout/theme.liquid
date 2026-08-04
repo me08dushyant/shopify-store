@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    {{content_for_header}}
+    {%  render "theme-variables" %}
+    {{ content_for_header }}
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
         {{content_for_layout}}
     </main>
     <footer>
-        <p>&copy; 2024 Playground. All rights reserved.</p>
+       {%section "footer" %}
     </footer>
 </body>
 </html>

@@ -1,0 +1,63 @@
+{% style %}
+  {{ settings.font_heading_family | font_face: font_display: 'swap' }}
+  {{ settings.font_body_family | font_face: font_display: 'swap' }}
+
+  :root {
+    /* Colors */
+    --color-background: {{ settings.color_background }};
+    --color-foreground: {{ settings.color_foreground }};
+    --color-primary: {{ settings.color_primary }};
+    --color-primary-foreground: {{ settings.color_primary_foreground }};
+    --color-secondary: {{ settings.color_secondary }};
+    --color-secondary-foreground: {{ settings.color_secondary_foreground }};
+    --color-accent: {{ settings.color_accent }};
+    --color-border: {{ settings.color_border }};
+    --color-muted: {{ settings.color_muted }};
+    --color-error: {{ settings.color_error }};
+    --color-success: {{ settings.color_success }};
+
+    /* Typography */
+    --font-body-family: {{ settings.font_body_family.family }}, {{ settings.font_body_family.fallback_families }};
+    --font-heading-family: {{ settings.font_heading_family.family }}, {{ settings.font_heading_family.fallback_families }};
+    --font-body-scale: {{ settings.font_body_scale | divided_by: 100.0 }};
+    --font-heading-scale: {{ settings.font_heading_scale | divided_by: 100.0 }};
+
+    /* Font sizes */
+    --font-size-xs: 1.2rem;
+    --font-size-sm: 1.4rem;
+    --font-size-base: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-xl: 2.4rem;
+    --font-size-2xl: 3.2rem;
+    --font-size-3xl: 4rem;
+
+    /* Spacing */
+    --spacing-xs: 0.4rem;
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1.6rem;
+    --spacing-lg: 2.4rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6.4rem;
+
+    /* Layout */
+    --page-width: {{ settings.page_width | divided_by: 16.0 }}rem;
+    --container-padding: {{ settings.container_padding }}px;
+
+    /* Borders / radius */
+    --border-radius-sm: {{ settings.border_radius | divided_by: 2 }}px;
+    --border-radius-md: {{ settings.border_radius }}px;
+    --border-radius-lg: {{ settings.border_radius | times: 2 }}px;
+    --border-width: 1px;
+
+    /* Effects */
+    --transition-duration: 150ms;
+    --transition-easing: ease;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    /* Z-index scale */
+    --z-index-header: 10;
+    --z-index-drawer: 20;
+    --z-index-modal: 30;
+  }
+{% endstyle %}
